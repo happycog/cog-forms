@@ -1,0 +1,46 @@
+button,
+a.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+	-webkit-appearance: none;
+	-moz-apearance: none;
+	appearance: none;
+	border-radius: 0.25em;
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	background: silver;
+	border: 1px solid silver;
+	display: inline-block;
+	font-size: 1em;
+	font-family: "Helvetica", sans-serif;
+	cursor: pointer;
+	color: #333;
+	text-decoration: none;
+	outline: 0;
+	overflow: visible;
+	vertical-align: top;
+	padding: 0.5em 0.75em;
+	margin: 0;
+	transition: color .25s ease, background-color .25s ease, border-color .25s ease;
+
+	&:hover {
+		color: #000;
+		background-color: gray;
+		border-color: gray;
+	}
+}
+
+button[type="submit"],
+input[type="submit"] {
+	background-color: dodgerblue;
+	border-color: dodgerblue;
+	color: #fff;
+
+	&:hover {
+		background-color: midnightblue;
+		border-color: midnightblue;
+		color: #fff;
+	}
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Forms</title>
+	<link rel="stylesheet" href="forms.css">
+	<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 0;
+		}
+		* + * {
+			margin-top: 1em;
+		}
+		fieldset label {
+			display: block;
+		}
+		fieldset label + * {
+			margin-top: 0.5em;
+		}
+		fieldset div:nth-child(2n+2) {
+			clear: left;
+		}
+		fieldset input[type="checkbox"] + *,
+		fieldset input[type="radio"] + * {
+			display: inline-block;
+		}
+		form > * + div {
+			margin-top: 1em;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Forms</h1>
+
+	<form action="#" class="form-label-orientation--stacked-labels">
+		<div>
+			<label for="input-text">Input Text</label>
+			<input type="text" name="input-text" id="input-text" placeholder="Input Text Placeholder">
+		</div>
+		<div>
+			<label for="input-email">Input Email</label>
+			<input type="email" name="input-email" id="input-email" placeholder="@">
+		</div>
+		<div>
+			<label for="input-password">Input Password</label>
+			<input type="password" name="input-password" id="input-password">
+		</div>
+		<div>
+			<input type="radio" name="input-radio" id="input-radio">
+			<label for="input-radio">Input Radio</label>
+		</div>
+		<div>
+			<input type="checkbox" name="input-checkbox" id="input-checkbox">
+			<label for="input-checkbox">Input Checkbox</label>
+		</div>
+		<div>
+			<label for="input-range">Input Range</label>
+			<input type="range" name="input-range" id="input-range">
+		</div>
+		<div>
+			<label for="input-url">Input URL</label>
+			<input type="url" name="input-url" id="input-url" placeholder="http://">
+		</div>
+		<fieldset>
+			<legend>Legend Title</legend>
+			<div>
+				<label for="input-month">Input Month</label>
+				<input type="month" name="input-month" id="input-month">
+			</div>
+			<div>
+				<label for="input-number">Input Number</label>
+				<input type="number" name="input-number" id="input-number">
+			</div>
+			<div>
+				<label for="input-search">Input Search</label>
+				<input type="search" name="input-search" id="input-search" results="5">
+			</div>
+			<div>
+				<label for="input-tel">Input Tel</label>
+				<input type="tel" name="input-tel" id="input-tel" placeholder="">
+			</div>
+			<div>
+				<label for="input-time">Input Time</label>
+				<input type="time" name="input-time" id="input-time">
+			</div>
+			<div>
+				<label for="input-week">Input Week</label>
+				<input type="week" name="input-week" id="input-week">
+			</div>
+
+		</fieldset>
+		<div>
+			<label for="input-file">Input File</label>
+			<input type="file" name="input-file" id="input-file">
+		</div>
+		<div>
+			<label for="input-url">Select</label>
+			<select name="select" id="select">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+		<div>
+			<label for="textarea">Textarea</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+		</div>
+
+		<div>
+			<button>Standard Button</button>
+			<input type="submit" value="Submit">
+			<input type="button" value="Button">
+			<input type="reset" value="Reset">
+			<a href="" class="button">Button Link</a>
+		</div>
+
+	</form>
+
+	<h2>Inline Form Layout</h2>
+
+	<form action="#" class="form-layout--inline">
+		<div><label for="username">Username</label><input type="text" id="username"></div>
+		<div><label for="password">Password</label><input type="password" id="password"></div>
+	</form>
+
+	<h2>Side Label Layout</h2>
+
+	<form action="#" class="form-label-orientation--side">
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="@">
+		</div>
+		<div>
+			<label for="url">Url</label>
+			<input type="url" id="url" name="url" placeholder="http://">
+		</div>
+		<div>
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+		</div>
+	</form>
+
+</body>
+</html>

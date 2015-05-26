@@ -1,0 +1,98 @@
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"] {
+	font-family: "Helvetica", sans-serif;
+	height: 2.5rem;
+	font-size: 1em;
+	padding: 0.5em 0.5em;
+	border: 1px solid silver;
+	background-color: white;
+	transition: box-shadow .15s ease, border .15s ease;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0;
+
+	&:focus {
+		outline: none;
+		border-color: dodgerblue;
+		box-shadow: 0 0 3px 1px dodgerblue;
+	}
+
+	&::-webkit-input-placeholder {
+	   color: silver;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+	   color: silver;
+	}
+
+	&::-moz-placeholder {  /* Firefox 19+ */
+	   color: silver;
+	}
+
+	&:-ms-input-placeholder {
+	   color: silver;
+	}
+}
+
+input[type="search"] {
+	-webkit-appearance:none;
+	-webkit-border-radius:0;
+
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-decoration,
+	&::-webkit-search-results-decoration {
+		-webkit-appearance:none;
+	}
+}
+
+input[type="month"],
+input[type="time"],
+input[type="week"] {
+	font-family: monospace;
+}
+
+select[disabled],
+textarea[disabled],
+input[type="text"][disabled],
+input[type="email"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="url"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="week"][disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled] {
+	background: silver;
+	color: lightgray;
+}
+
+textarea,
+select[size],
+select[multiple] {
+	height: auto;
+}
+
+select[size="0"],
+select[size="1"] {
+	height: 2.5em;
+}

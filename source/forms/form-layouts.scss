@@ -1,0 +1,65 @@
+fieldset,
+form {
+	& > * + * {
+		margin-top: 1em;
+	}
+
+	legend + * {
+		margin-top: 0;
+	}
+	& > * + fieldset {
+		margin-top: 2em;
+	}
+}
+
+.form-layout {
+
+	&--inline {
+		& > div {
+			display: inline-block;
+
+			& + div {
+				margin-left: 2em;
+			}
+
+			label,
+			input {
+				margin: 0;
+			}
+
+			label {
+				margin-right: 0.5em;
+			}
+		}
+	}
+
+}
+
+.form-label-orientation {
+	&--top {
+		label {
+			display: block;
+
+			& + * {
+				margin-top: 0.5em;
+			}
+		}
+		input[type="checkbox"],
+		input[type="radio"] {
+			& + label {
+				display: inline-block;
+			}
+		}
+	}
+	&--side {
+		label {
+			width: 25%;
+			display: inline-block;
+			max-width: 9em;
+
+			& + input {
+				margin-top: 0;
+			}
+		}
+	}
+}
