@@ -76,6 +76,15 @@ input[type="search"] {
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-decoration {
     -webkit-appearance: none; }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid silver;
+  width: 15px;
+  height: 15px; }
+  input[type="checkbox"]:checked {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20style%3D%22pointer-events%3A%20none%3B%20display%3A%20block%3B%22%3E%3Cg%20id%3D%22check%22%20fill%3D%22%23000000%22%3E%3Cpolygon%20points%3D%229%2C16.2%204.8%2C12%203.4%2C13.4%209%2C19%2021%2C7%2019.6%2C5.6%20%22%20fill%3D%22%23000000%22%3E%3C%2Fpolygon%3E%3C%2Fg%3E%3C%2Fsvg%3E'); }
+
 input[type="month"], input[type="time"], input[type="week"] {
   font-family: monospace; }
 
